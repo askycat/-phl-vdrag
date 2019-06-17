@@ -1,22 +1,26 @@
 {
   "name": "@phl/vdrag",
-  "description": "drag for vue",
-  "version": "1.0.4",
-  "author": "askycat <875387716@qq.com>",
-  "license": "MIT",
-  "main":"dist/vdrag.js",
+  "version": "1.1.0",
   "private": false,
+  "description": "drag for vue",
+  "author": "askycat <875387716@qq.com>",
   "scripts": {
-    "dev": "cross-env NODE_ENV=development webpack-dev-server --open --hot",
-    "build": "cross-env NODE_ENV=production webpack --progress --hide-modules"
+    "build": "cross-env NODE_ENV=production webpack --progress --hide-modules",
+    "dev": "cross-env NODE_ENV=development webpack-dev-server --open --hot"
   },
+  "main": "dist/vdrag.js",
   "dependencies": {
     "vue": "^2.5.11"
   },
-  "browserslist": [
-    "> 1%",
-    "last 2 versions",
-    "not ie <= 8"
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/askycat/phl-vdrag"
+  },
+  "keywords": [
+    "vdrag",
+    "drag",
+    "v-drag",
+    "vue-drag"
   ],
   "devDependencies": {
     "babel-core": "^6.26.0",
@@ -26,9 +30,19 @@
     "cross-env": "^5.0.5",
     "css-loader": "^0.28.7",
     "file-loader": "^1.1.4",
+    "stylus": "^0.54.5",
+    "stylus-loader": "^3.0.1",
+    "vue-cli-plugin-vuetify": "^0.5.0",
     "vue-loader": "^13.0.5",
     "vue-template-compiler": "^2.4.4",
+    "vuetify-loader": "^1.0.5",
     "webpack": "^3.6.0",
     "webpack-dev-server": "^2.9.1"
-  }
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not ie <= 8"
+  ],
+  "license": "MIT"
 }

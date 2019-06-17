@@ -2,6 +2,8 @@
 
 > only drag for vue
 
+>[Demo](https://askycat.github.io/phl-vdrag/)
+
 ## Installation
 
 ```sh
