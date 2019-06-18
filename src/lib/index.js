@@ -3,10 +3,11 @@ export default  {
 		Vue.directive("drag", {
 			bind: function (el, binding) {
 				//console.log(binding)
-				var postion="fixed";
+				var position="fixed";
 				if(binding.value.position!==undefined){
 					position=binding.value.position
 				}
+				el.style.position=position
 				if(binding.value.zIndex){
 					el.style.zIndex= binding.value.zIndex
 				}
