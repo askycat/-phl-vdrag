@@ -4,19 +4,22 @@ export default  {
 			bind: function (el, binding) {
 				//console.log(binding)
 				var position="fixed";
-				if(binding.value.position!==undefined){
-					position=binding.value.position
-				}
-				el.style.position=position
-				if(binding.value.zIndex){
-					el.style.zIndex= binding.value.zIndex
-				}
+				var zIndex=4
 				var isChildDom
 				if (binding.value !== undefined) {
+					if(binding.value.position){
+						position=binding.value.position
+					}
+					if(binding.value.zIndex){
+						zIndex= binding.value.zIndex
+					}
 					isChildDom = true
 				} else {
 					isChildDom = false
 				}
+
+				el.style.position=position
+				el.style.zIndex=zIndex
 				if (/Android|webOS|iPhone|BlackBerry/i.test(navigator.userAgent)) {
 
 					//移动端
