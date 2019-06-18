@@ -2,9 +2,9 @@ export default  {
 	install: function (Vue, options) {
 		Vue.directive("drag", {
 			bind: function (el, binding) {
-				// console.log(binding)
-				el.style.position = "fixed"
-				el.style.zIndex= "999"
+				console.log(binding)
+				el.style.position = binding.value.position||"fixed"
+				el.style.zIndex= binding.value.zIndex||2
 				var isChildDom
 				if (binding.value !== undefined) {
 					isChildDom = true
